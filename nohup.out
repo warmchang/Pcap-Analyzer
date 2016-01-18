@@ -1,0 +1,637 @@
+WARNING: No route found for IPv6 destination :: (no default route?)
+ * Running on http://127.0.0.1:8080/
+ * Restarting with reloader
+WARNING: No route found for IPv6 destination :: (no default route?)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+OSError: [Errno 2] No such file or directory: 'server/pcapfile/.gitkeep'
+WARNING: No route found for IPv6 destination :: (no default route?)
+ * Running on http://0.0.0.0:8080/
+ * Restarting with reloader
+WARNING: No route found for IPv6 destination :: (no default route?)
+218.94.96.179 - - [18/Jan/2016 10:37:02] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 10:37:02] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:10] "POST /upload HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.94.96.179 - - [18/Jan/2016 10:37:11] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:12] "GET /static/css/semantic.css HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:16] "GET /static/components/icon.css HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:16] "GET /static/js/jquery-2.1.1.min.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:16] "GET /static/css/home.css HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:16] "GET /static/css/jquery.fileupload.css HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:16] "GET /static/js/semantic.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:20] "GET /static/js/jquery.ui.widget.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:20] "GET /static/js/jquery.iframe-transport.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:20] "GET /static/js/jquery.fileupload.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:20] "GET /static/js/highcharts.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:22] "GET /static/js/chartkick.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:22] "GET /static/js/upload.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:23] "GET /static/themes/default/assets/fonts/icons.woff HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:23] "GET /img/2.gif HTTP/1.1" 404 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.94.96.179 - - [18/Jan/2016 10:37:29] "GET /analyze/2 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/pcap/pcap-analyzer/server/views.py", line 52, in analyze
+    ipsrc = get_ip_src(file)
+  File "/root/pcap/pcap-analyzer/server/func.py", line 250, in get_ip_src
+    ipsrclist = Counter(ipsrc).most_common()
+TypeError: 'module' object is not callable
+218.94.96.179 - - [18/Jan/2016 10:37:30] "GET /analyze/2?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:30] "GET /analyze/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:30] "GET /analyze/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:31] "GET /analyze/2?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:31] "GET /analyze/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:37:31] "GET /analyze/2?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:40:00] "GET /analyze/2?__debugger__=yes&cmd=source&frm=140119039432208&s=7KXT8Xr5rQyB8NlBGsic HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:40:05] "GET /analyze/2?__debugger__=yes&cmd=source&frm=140119039432272&s=7KXT8Xr5rQyB8NlBGsic HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.94.96.179 - - [18/Jan/2016 10:41:37] "GET /analyze/2 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/pcap/pcap-analyzer/server/views.py", line 52, in analyze
+    ipsrc = get_ip_src(file)
+  File "/root/pcap/pcap-analyzer/server/func.py", line 250, in get_ip_src
+    ipsrclist = Counter(ipsrc).most_common()
+TypeError: 'module' object is not callable
+218.94.96.179 - - [18/Jan/2016 10:41:38] "GET /analyze/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:41:38] "GET /analyze/2?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:41:38] "GET /analyze/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:41:39] "GET /analyze/2?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:41:39] "GET /analyze/2?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:41:39] "GET /analyze/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:41:39] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 10:41:39] "GET /upload HTTP/1.1" 200 -
+210.75.192.2 - - [18/Jan/2016 10:42:55] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 10:44:26] "GET /analyze/2?__debugger__=yes&cmd=source&frm=140118945151888&s=7KXT8Xr5rQyB8NlBGsic HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:45:32] "GET /analyze/2?__debugger__=yes&cmd=source&frm=140118945151888&s=7KXT8Xr5rQyB8NlBGsic HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 10:46:14] "GET /upload HTTP/1.1" 200 -
+ * Detected change in '/root/pcap/pcap-analyzer/server/func.py', reloading
+[*]execute sql: insert into pcap (file,pcapnum,size) values ("20160118_1037_coockie.pcap",1466,"835.79 KB");
+ * Restarting with reloader
+WARNING: No route found for IPv6 destination :: (no default route?)
+ * Detected change in '/root/pcap/pcap-analyzer/server/func.py', reloading
+ * Restarting with reloader
+WARNING: No route found for IPv6 destination :: (no default route?)
+218.94.96.179 - - [18/Jan/2016 10:49:57] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 10:49:57] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:49:57] "GET /img/2.gif HTTP/1.1" 404 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.94.96.179 - - [18/Jan/2016 10:50:07] "GET /analyze/2 HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:50:13] "GET /static/js/fixtableheader.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:50:13] "GET /static/js/analyze.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 10:53:21] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 10:53:40] "GET /upload HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.94.96.179 - - [18/Jan/2016 10:53:54] "GET /analyze/2 HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 10:55:50] "GET / HTTP/1.1" 302 -
+117.136.45.130 - - [18/Jan/2016 10:55:50] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 10:55:51] "GET /img/2.gif HTTP/1.1" 404 -
+117.136.45.130 - - [18/Jan/2016 10:56:18] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 10:56:18] "GET /static/js/upload.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 10:56:45] "GET /img/2.gif HTTP/1.1" 404 -
+117.136.45.130 - - [18/Jan/2016 10:56:45] "GET /static/themes/default/assets/fonts/icons.woff HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 10:56:55] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 10:56:55] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 10:56:56] "GET /static/themes/default/assets/fonts/icons.woff HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 10:57:06] "GET / HTTP/1.1" 302 -
+117.136.45.130 - - [18/Jan/2016 10:57:06] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 10:57:21] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 10:57:28] "GET / HTTP/1.1" 302 -
+117.136.45.130 - - [18/Jan/2016 10:57:28] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 10:57:46] "GET / HTTP/1.1" 302 -
+117.136.45.130 - - [18/Jan/2016 10:57:46] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:03:22] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:03:25] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:03:34] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:03:47] "GET / HTTP/1.1" 302 -
+117.136.45.130 - - [18/Jan/2016 11:03:47] "GET /upload HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.94.96.179 - - [18/Jan/2016 11:04:55] "GET /analyze/2 HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+183.60.35.29 - - [18/Jan/2016 11:05:23] "GET /analyze/2 HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+117.136.45.130 - - [18/Jan/2016 11:06:21] "GET /analyze/2 HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:06:39] "GET /img/2.gif HTTP/1.1" 404 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+117.136.45.130 - - [18/Jan/2016 11:07:24] "GET /analyze/2 HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+117.136.45.130 - - [18/Jan/2016 11:07:24] "GET /static/js/fixtableheader.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:07:24] "GET /static/js/analyze.js HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+117.136.45.130 - - [18/Jan/2016 11:07:33] "GET /analyze/2 HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+117.136.45.130 - - [18/Jan/2016 11:07:56] "GET /analyze/2 HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:08:12] "GET /static/js/analyze.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:08:12] "GET /static/js/fixtableheader.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:08:12] "GET /img/2.gif HTTP/1.1" 404 -
+117.136.45.130 - - [18/Jan/2016 11:08:16] "GET /static/js/fixtableheader.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:08:16] "GET /static/js/analyze.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:12:48] "GET / HTTP/1.1" 302 -
+117.136.45.130 - - [18/Jan/2016 11:12:49] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:12:49] "GET /static/css/semantic.css HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:12:54] "GET /static/components/icon.css HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:12:54] "GET /static/css/jquery.fileupload.css HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:12:54] "GET /static/css/home.css HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:12:54] "GET /static/js/jquery-2.1.1.min.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:12:55] "GET /static/js/semantic.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:12:59] "GET /static/js/jquery.ui.widget.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:12:59] "GET /static/js/jquery.iframe-transport.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:12:59] "GET /static/js/jquery.fileupload.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:13:00] "GET /static/js/highcharts.js HTTP/1.1" 200 -
+183.60.35.29 - - [18/Jan/2016 11:13:01] "GET /static/js/chartkick.js HTTP/1.1" 200 -
+183.60.35.29 - - [18/Jan/2016 11:13:01] "GET /static/js/highcharts.js HTTP/1.1" 200 -
+183.60.35.29 - - [18/Jan/2016 11:13:01] "GET /static/js/jquery-2.1.1.min.js HTTP/1.1" 200 -
+183.60.35.29 - - [18/Jan/2016 11:13:02] "GET /static/js/jquery.ui.widget.js HTTP/1.1" 200 -
+183.60.35.29 - - [18/Jan/2016 11:13:02] "GET /static/js/jquery.iframe-transport.js HTTP/1.1" 200 -
+183.60.35.29 - - [18/Jan/2016 11:13:02] "GET /static/js/semantic.js HTTP/1.1" 200 -
+183.60.35.29 - - [18/Jan/2016 11:13:06] "GET /static/js/jquery.fileupload.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:13:06] "GET /static/js/chartkick.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:13:06] "GET /static/js/upload.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:13:08] "GET /img/2.gif HTTP/1.1" 404 -
+117.136.45.130 - - [18/Jan/2016 11:13:08] "GET /static/themes/default/assets/fonts/icons.woff HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:13:09] "GET /static/img/favicon.png HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+117.136.45.130 - - [18/Jan/2016 11:13:47] "GET /analyze/2 HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:13:52] "GET /static/js/fixtableheader.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:13:52] "GET /static/js/analyze.js HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:16:03] "GET / HTTP/1.1" 302 -
+117.136.45.130 - - [18/Jan/2016 11:16:03] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:16:07] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:16:10] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:16:21] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:16:29] "GET / HTTP/1.1" 302 -
+117.136.45.130 - - [18/Jan/2016 11:16:29] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:16:33] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:16:44] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:16:46] "GET / HTTP/1.1" 302 -
+117.136.45.130 - - [18/Jan/2016 11:16:47] "GET /upload HTTP/1.1" 200 -
+117.136.45.130 - - [18/Jan/2016 11:16:50] "GET /upload HTTP/1.1" 200 -
+172.82.166.210 - - [18/Jan/2016 12:32:42] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 -
+120.25.103.140 - - [18/Jan/2016 12:57:21] "GET / HTTP/1.1" 302 -
+121.42.0.31 - - [18/Jan/2016 13:18:13] "GET / HTTP/1.1" 302 -
+121.42.0.31 - - [18/Jan/2016 13:18:13] "GET /upload HTTP/1.1" 200 -
+54.238.133.8 - - [18/Jan/2016 13:30:10] "GET / HTTP/1.1" 302 -
+61.157.96.193 - - [18/Jan/2016 13:40:04] "GET http://www.sogou.com/?rands=_106401734081425528263604 HTTP/1.1" 302 -
+61.157.96.193 - - [18/Jan/2016 13:40:04] "GET http://www.sogou.com/upload HTTP/1.1" 200 -
+61.157.96.193 - - [18/Jan/2016 13:40:04] "GET http://www.haosou.com/?rands=_215208037549648901793612 HTTP/1.1" 302 -
+61.157.96.193 - - [18/Jan/2016 13:40:05] "GET http://www.haosou.com/upload HTTP/1.1" 200 -
+61.157.96.193 - - [18/Jan/2016 13:40:05] "GET http://reg.renren.com/?rands=_2397654716015779401883376 HTTP/1.1" 302 -
+61.157.96.193 - - [18/Jan/2016 13:40:06] "GET http://reg.renren.com/upload HTTP/1.1" 200 -
+61.157.96.193 - - [18/Jan/2016 13:40:14] "GET http://m.baidu.com/?rands=_17720782478553518113632 HTTP/1.1" 302 -
+61.157.96.193 - - [18/Jan/2016 13:40:14] "GET http://m.baidu.com/upload HTTP/1.1" 200 -
+61.157.96.193 - - [18/Jan/2016 13:40:15] "GET http://www.kuaidaili.com/?rands=_1560341572012157293788960 HTTP/1.1" 302 -
+61.157.96.193 - - [18/Jan/2016 13:40:15] "GET http://www.kuaidaili.com/upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 13:57:49] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 13:57:49] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 13:57:49] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 13:57:49] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 13:57:49] "GET /img/2.gif HTTP/1.1" 404 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.94.96.179 - - [18/Jan/2016 13:58:00] "GET /analyze/2 HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:00:16] "GET /download/2 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/pcap/pcap-analyzer/server/views.py", line 38, in download
+    pcapfile = get_pcap_entries()
+TypeError: get_pcap_entries() takes exactly 1 argument (0 given)
+218.94.96.179 - - [18/Jan/2016 14:00:16] "GET /download/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:00:16] "GET /download/2?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:00:16] "GET /download/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:00:17] "GET /download/2?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:00:17] "GET /download/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:00:17] "GET /download/2?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:00:17] "GET /download/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:01:11] "GET /download/2?__debugger__=yes&cmd=source&frm=140370640216016&s=oUSU4b9wMWfCnCK2gETo HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:01:34] "GET /download/2?__debugger__=yes&cmd=source&frm=140370640216016&s=oUSU4b9wMWfCnCK2gETo HTTP/1.1" 200 -
+ * Detected change in '/root/pcap/pcap-analyzer/server/views.py', reloading
+----------------------------------------
+Exception happened during processing of request from ('117.136.45.130', 46033)
+----------------------------------------
+ * Restarting with reloader
+WARNING: No route found for IPv6 destination :: (no default route?)
+218.94.96.179 - - [18/Jan/2016 14:05:01] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 14:05:01] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 14:05:02] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:05:02] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:05:21] "GET /download/2 HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:07:44] "POST /upload HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.94.96.179 - - [18/Jan/2016 14:07:45] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:07:45] "GET /static/css/semantic.css HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:45] "GET /static/components/icon.css HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:45] "GET /static/css/home.css HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:45] "GET /static/css/jquery.fileupload.css HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:45] "GET /static/js/semantic.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:45] "GET /static/js/jquery-2.1.1.min.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:45] "GET /static/js/jquery.ui.widget.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:45] "GET /static/js/jquery.iframe-transport.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:45] "GET /static/js/chartkick.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:45] "GET /static/js/jquery.fileupload.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:45] "GET /static/js/highcharts.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:45] "GET /static/js/upload.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "POST /delete/3 HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "GET /static/css/semantic.css HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "GET /static/components/icon.css HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "GET /static/css/home.css HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "GET /static/css/jquery.fileupload.css HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "GET /static/js/jquery-2.1.1.min.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "GET /static/js/semantic.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "GET /static/js/jquery.ui.widget.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "GET /static/js/jquery.iframe-transport.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "GET /static/js/highcharts.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "GET /static/js/jquery.fileupload.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "GET /static/js/chartkick.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:07:51] "GET /static/js/upload.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 14:08:10] "GET /download/2 HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:12:06] "GET /download/2 HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.94.96.179 - - [18/Jan/2016 14:12:43] "GET /analyze/2 HTTP/1.1" 200 -
+123.151.42.61 - - [18/Jan/2016 14:13:14] "GET http://www.baidu.com/ HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 14:17:21] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 14:17:21] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:17:25] "GET /download/2 HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:17:39] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 14:17:40] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 14:17:40] "GET /upload HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.94.96.179 - - [18/Jan/2016 14:18:18] "GET /packetdetail/2/17 HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.94.96.179 - - [18/Jan/2016 14:18:46] "GET /packetdetail/2/34 HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.94.96.179 - - [18/Jan/2016 14:19:24] "GET /packetdetail/2/1459 HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.94.96.179 - - [18/Jan/2016 14:20:13] "GET /packetdetail/2/1080 HTTP/1.1" 200 -
+123.57.141.93 - - [18/Jan/2016 14:31:04] "CONNECT search.yahoo.com:443 HTTP/1.1" 404 -
+218.94.96.179 - - [18/Jan/2016 15:43:30] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 15:43:31] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 15:43:31] "GET /img/2.gif HTTP/1.1" 404 -
+218.94.96.179 - - [18/Jan/2016 15:43:34] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 15:43:34] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 15:43:35] "GET /img/2.gif HTTP/1.1" 404 -
+218.94.96.179 - - [18/Jan/2016 15:54:24] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 15:54:24] "GET /upload HTTP/1.1" 200 -
+180.153.4.19 - - [18/Jan/2016 15:54:44] "GET / HTTP/1.1" 302 -
+161.202.120.215 - - [18/Jan/2016 15:54:44] "GET / HTTP/1.1" 302 -
+161.202.120.215 - - [18/Jan/2016 15:54:45] "GET /upload HTTP/1.1" 200 -
+161.202.120.215 - - [18/Jan/2016 15:54:45] "GET /static/css/semantic.css HTTP/1.1" 200 -
+161.202.120.215 - - [18/Jan/2016 15:54:48] "GET /static/components/icon.css HTTP/1.1" 200 -
+161.202.120.215 - - [18/Jan/2016 15:54:50] "GET /static/css/home.css HTTP/1.1" 200 -
+161.202.120.215 - - [18/Jan/2016 15:54:51] "GET /static/css/jquery.fileupload.css HTTP/1.1" 200 -
+161.202.120.215 - - [18/Jan/2016 15:54:52] "GET /static/js/jquery-2.1.1.min.js HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:54:52] "GET /upload HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:54:52] "GET /static/js/semantic.js HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:54:58] "GET /static/css/semantic.css HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:04] "GET /static/js/jquery-2.1.1.min.js HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:55:04] "GET /static/js/jquery.ui.widget.js HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:55:04] "GET /static/js/jquery.iframe-transport.js HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:55:04] "GET /static/js/jquery.fileupload.js HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:55:04] "GET /upload HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:04] "GET /upload HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:04] "GET /upload HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:04] "GET /upload HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:55:05] "GET /static/js/jquery-2.1.1.min.js HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:55:05] "GET /static/css/semantic.css HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:13] "GET /static/js/jquery.ui.widget.js HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:13] "GET /static/js/jquery.fileupload.js HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:55:13] "GET /static/js/highcharts.js HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:15] "GET /static/js/chartkick.js HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:15] "GET /static/js/upload.js HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:15] "GET /upload HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:55:15] "GET /static/css/semantic.css HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:21] "GET /static/js/highcharts.js HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:55:22] "GET /static/js/chartkick.js HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:55:22] "GET /upload HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:23] "GET /static/css/semantic.css HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:30] "GET /static/themes/default/assets/fonts/icons.woff HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:30] "GET /img/2.gif HTTP/1.1" 404 -
+218.2.99.35 - - [18/Jan/2016 15:55:30] "GET /static/img/favicon.png HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:37] "POST /upload HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+58.213.161.146 - - [18/Jan/2016 15:55:38] "GET /upload HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:55:38] "GET /static/css/semantic.css HTTP/1.1" 304 -
+218.2.99.35 - - [18/Jan/2016 15:55:38] "GET /static/components/icon.css HTTP/1.1" 304 -
+218.2.99.35 - - [18/Jan/2016 15:55:38] "GET /static/css/home.css HTTP/1.1" 304 -
+58.213.161.146 - - [18/Jan/2016 15:55:38] "GET /static/css/jquery.fileupload.css HTTP/1.1" 304 -
+58.213.161.146 - - [18/Jan/2016 15:55:38] "GET /static/js/jquery-2.1.1.min.js HTTP/1.1" 304 -
+58.213.161.146 - - [18/Jan/2016 15:55:38] "GET /static/js/semantic.js HTTP/1.1" 304 -
+218.2.99.35 - - [18/Jan/2016 15:55:38] "GET /static/js/jquery.ui.widget.js HTTP/1.1" 304 -
+58.213.161.146 - - [18/Jan/2016 15:55:38] "GET /static/js/jquery.iframe-transport.js HTTP/1.1" 304 -
+58.213.161.146 - - [18/Jan/2016 15:55:38] "GET /static/js/jquery.fileupload.js HTTP/1.1" 304 -
+218.2.99.35 - - [18/Jan/2016 15:55:38] "GET /static/js/highcharts.js HTTP/1.1" 304 -
+218.2.99.35 - - [18/Jan/2016 15:55:38] "GET /static/js/chartkick.js HTTP/1.1" 304 -
+58.213.161.146 - - [18/Jan/2016 15:55:38] "GET /static/js/upload.js HTTP/1.1" 304 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.2.99.35 - - [18/Jan/2016 15:55:46] "GET /analyze/4 HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:55:49] "GET /static/js/fixtableheader.js HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:55:49] "GET /static/js/analyze.js HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:56:17] "GET / HTTP/1.1" 302 -
+218.2.99.35 - - [18/Jan/2016 15:56:17] "GET /upload HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:56:29] "POST /upload HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+58.213.161.146 - - [18/Jan/2016 15:56:30] "GET /upload HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:56:30] "GET /static/css/semantic.css HTTP/1.1" 304 -
+218.2.99.35 - - [18/Jan/2016 15:56:30] "GET /static/components/icon.css HTTP/1.1" 304 -
+58.213.161.146 - - [18/Jan/2016 15:56:30] "GET /static/css/home.css HTTP/1.1" 304 -
+218.2.99.35 - - [18/Jan/2016 15:56:30] "GET /static/css/jquery.fileupload.css HTTP/1.1" 304 -
+58.213.161.146 - - [18/Jan/2016 15:56:30] "GET /static/js/jquery-2.1.1.min.js HTTP/1.1" 304 -
+58.213.161.146 - - [18/Jan/2016 15:56:30] "GET /static/js/semantic.js HTTP/1.1" 304 -
+218.2.99.35 - - [18/Jan/2016 15:56:30] "GET /static/js/jquery.ui.widget.js HTTP/1.1" 304 -
+218.2.99.35 - - [18/Jan/2016 15:56:30] "GET /static/js/jquery.fileupload.js HTTP/1.1" 304 -
+58.213.161.146 - - [18/Jan/2016 15:56:30] "GET /static/js/jquery.iframe-transport.js HTTP/1.1" 304 -
+58.213.161.146 - - [18/Jan/2016 15:56:30] "GET /static/js/highcharts.js HTTP/1.1" 304 -
+58.213.161.146 - - [18/Jan/2016 15:56:30] "GET /static/js/upload.js HTTP/1.1" 304 -
+58.213.161.146 - - [18/Jan/2016 15:56:30] "GET /static/js/chartkick.js HTTP/1.1" 304 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+58.213.161.146 - - [18/Jan/2016 15:56:37] "GET /analyze/5 HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.2.99.35 - - [18/Jan/2016 15:57:01] "GET /packetdetail/5/7 HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+58.213.161.146 - - [18/Jan/2016 15:57:36] "GET /packetdetail/5/574 HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.2.99.35 - - [18/Jan/2016 15:58:26] "GET /analyze/4 HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:59:24] "GET /upload HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+218.2.99.35 - - [18/Jan/2016 15:59:51] "GET /analyze/5 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/pcap/pcap-analyzer/server/views.py", line 66, in analyze
+    details = decode_capture_file(file)
+  File "/root/pcap/pcap-analyzer/server/func.py", line 88, in decode_capture_file
+    cap.load_packets(timeout=5)
+  File "/usr/local/lib/python2.7/dist-packages/pyshark/capture/capture.py", line 105, in load_packets
+    self.apply_on_packets(keep_packet, timeout=timeout)
+  File "/usr/local/lib/python2.7/dist-packages/pyshark/capture/capture.py", line 196, in apply_on_packets
+    return self.eventloop.run_until_complete(coro)
+  File "/usr/local/lib/python2.7/dist-packages/trollius/base_events.py", line 350, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python2.7/dist-packages/trollius/futures.py", line 286, in result
+    raise self._exception
+OSError: [Errno 12] Cannot allocate memory
+218.2.99.35 - - [18/Jan/2016 15:59:51] "GET /analyze/5?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:59:51] "GET /analyze/5?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:59:51] "GET /analyze/5?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:59:52] "GET /analyze/5?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:59:52] "GET /analyze/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:59:52] "GET /analyze/5?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:59:52] "GET /analyze/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:59:57] "GET /analyze/5 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/pcap/pcap-analyzer/server/views.py", line 50, in analyze
+    details = decode_capture_file(file,filter)
+  File "/root/pcap/pcap-analyzer/server/func.py", line 88, in decode_capture_file
+    cap.load_packets(timeout=5)
+  File "/usr/local/lib/python2.7/dist-packages/pyshark/capture/capture.py", line 105, in load_packets
+    self.apply_on_packets(keep_packet, timeout=timeout)
+  File "/usr/local/lib/python2.7/dist-packages/pyshark/capture/capture.py", line 196, in apply_on_packets
+    return self.eventloop.run_until_complete(coro)
+  File "/usr/local/lib/python2.7/dist-packages/trollius/base_events.py", line 350, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python2.7/dist-packages/trollius/futures.py", line 286, in result
+    raise self._exception
+OSError: [Errno 12] Cannot allocate memory
+218.2.99.35 - - [18/Jan/2016 15:59:57] "GET /analyze/5?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:59:57] "GET /analyze/5?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 15:59:57] "GET /analyze/5?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:59:58] "GET /analyze/5?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:59:58] "GET /analyze/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 15:59:58] "GET /analyze/5?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+tshark: Lua: Error during loading:
+ [string "/usr/share/wireshark/init.lua"]:46: dofile has been disabled due to running Wireshark as superuser. See http://wiki.wireshark.org/CaptureSetup/CapturePrivileges for help in running Wireshark as an unprivileged user.
+58.213.161.146 - - [18/Jan/2016 16:00:40] "GET /analyze/5 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/pcap/pcap-analyzer/server/views.py", line 66, in analyze
+    details = decode_capture_file(file)
+  File "/root/pcap/pcap-analyzer/server/func.py", line 88, in decode_capture_file
+    cap.load_packets(timeout=5)
+  File "/usr/local/lib/python2.7/dist-packages/pyshark/capture/capture.py", line 105, in load_packets
+    self.apply_on_packets(keep_packet, timeout=timeout)
+  File "/usr/local/lib/python2.7/dist-packages/pyshark/capture/capture.py", line 196, in apply_on_packets
+    return self.eventloop.run_until_complete(coro)
+  File "/usr/local/lib/python2.7/dist-packages/trollius/base_events.py", line 350, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python2.7/dist-packages/trollius/futures.py", line 286, in result
+    raise self._exception
+OSError: [Errno 12] Cannot allocate memory
+58.213.161.146 - - [18/Jan/2016 16:00:40] "GET / HTTP/1.1" 302 -
+58.213.161.146 - - [18/Jan/2016 16:00:48] "GET /analyze/5 HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/pcap/pcap-analyzer/server/views.py", line 50, in analyze
+    details = decode_capture_file(file,filter)
+  File "/root/pcap/pcap-analyzer/server/func.py", line 88, in decode_capture_file
+    cap.load_packets(timeout=5)
+  File "/usr/local/lib/python2.7/dist-packages/pyshark/capture/capture.py", line 105, in load_packets
+    self.apply_on_packets(keep_packet, timeout=timeout)
+  File "/usr/local/lib/python2.7/dist-packages/pyshark/capture/capture.py", line 196, in apply_on_packets
+    return self.eventloop.run_until_complete(coro)
+  File "/usr/local/lib/python2.7/dist-packages/trollius/base_events.py", line 350, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python2.7/dist-packages/trollius/futures.py", line 286, in result
+    raise self._exception
+OSError: [Errno 12] Cannot allocate memory
+58.213.161.146 - - [18/Jan/2016 16:00:48] "GET /upload HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 16:00:48] "GET /analyze/5?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 16:00:48] "GET /analyze/5?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 16:00:48] "GET /analyze/5?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 16:00:49] "GET /analyze/5?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+218.2.99.35 - - [18/Jan/2016 16:00:49] "GET /analyze/5?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+58.213.161.146 - - [18/Jan/2016 16:00:49] "GET /analyze/5?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 16:13:16] "GET / HTTP/1.1" 302 -
+218.94.96.179 - - [18/Jan/2016 16:13:16] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "POST /delete/2,4,5 HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "GET /upload HTTP/1.1" 200 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "GET /static/css/semantic.css HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "GET /static/components/icon.css HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "GET /static/css/home.css HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "GET /static/css/jquery.fileupload.css HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "GET /static/js/jquery-2.1.1.min.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "GET /static/js/semantic.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "GET /static/js/jquery.ui.widget.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "GET /static/js/jquery.iframe-transport.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "GET /static/js/highcharts.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "GET /static/js/jquery.fileupload.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "GET /static/js/chartkick.js HTTP/1.1" 304 -
+218.94.96.179 - - [18/Jan/2016 16:13:24] "GET /static/js/upload.js HTTP/1.1" 304 -

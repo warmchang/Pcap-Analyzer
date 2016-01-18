@@ -35,7 +35,7 @@ def upload():
 def download(id):
     id = int(id)
     db = get_connection()
-    pcapfile = get_pcap_entries()
+    pcapfile = get_pcap_entries(id)
     file = pcapfile[0]['filename']
     return send_file("../"+UPLOAD_FOLDER+file, attachment_filename=file, as_attachment=True)
 

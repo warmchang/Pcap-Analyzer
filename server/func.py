@@ -3,6 +3,7 @@
 # author: le4f.net
 
 from server import *
+from collections import Counter
 
 #连接数据库
 def connect_db():

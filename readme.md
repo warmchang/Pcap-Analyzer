@@ -49,7 +49,7 @@ Files
 Installation/Running
 ---
 
-* `$ git clone https://github.com/le4f/pcap-analyzer.git`
+* `$ git clone https://github.com/neko13/pcap-analyzer.git`
 * `$ cd pcap-analyzer`
 * `$ pip install -r requirements.txt`
 * `$ chmod +x run.sh`
